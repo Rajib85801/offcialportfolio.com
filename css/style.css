@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
+}
+.navbar-brand img {
+    width: 130px;
+}
+.navbar_items li a{
+	text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    transition: color .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.active, .navbar_items li a:hover{
+	color: #fba319!important;
+}
+.navbar_items li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    background: red;
+    top: 100%;
+    left: 7%;
+    border-bottom: 2px solid #fba319;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.active:after, .navbar_items li a:hover:after{
+	width: 80%!important;
+}
+.nav_style{
+    background: #fff;
+    box-shadow: 0px 5px 10px 0px #e4e4e4;
+}
+@media(max-width: 991px){
+	.navbar_items li a:after{
+		width: 0%!important;
+	}
+
+	.navbar_items{
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+/* navbar end */
+.template_img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -1px -1px 17px -8px;
+ }
+ .template_img:after {
+    content: "";
+    background: rgb(60, 60, 60,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all transform .3s ease-in-out;
+}
+.template_content{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translateX(-200px);
+    background: #fba319;
+    height: 100%;
+    width: 200px;
+    color: #fff!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 21px;
+    z-index: 9;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+}
+.template_img img{
+    position: relative;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+}
+.template_img:hover img{
+    transform: translateX(200px);
+}
+.template_img:hover:after{
+    opacity: 1;;
+}
+.template_img:hover .template_content{
+    transform: translateX(0px);
+}
+.template_img:hover .template_content a{
+    transform: translateX(0px);
+}
+.template_img:hover .template_content p{
+    transform: translateX(0px);
+}
+.template_content p{
+    transform: translateX(-182px);
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    transition-delay: 0.3s;
+}
+.template_content a {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: translateX(182px);
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    transition-delay: 0.3s;
+}
+.templates__item {
+    padding: 30px 10px;
+    box-shadow: -2px -2px 8px -4px;
+}
+.templates__item img{
+    padding: 8px;
+    border:1px solid #bbbbbb;
+}
+.templates__item h2 {
+    font-size: 19px;
+    margin-top: 16px;
+}
+.order_btn {
+    padding: 8px 25px;
+    text-decoration: none!important;
+}
+.template__details__text p {
+    font-size: 19px;
+    margin: 26px 0px;
+}
+.template__details__text h3 {
+    color: #fba319;
+}
+.items_btn {
+    margin-top: 20px;
+}
+
+.items_btn a {
+    text-decoration: none;
+    padding: 5px 26px;
+}
+/* header start */
+p.header-text {
+    font-size: 20px;
+}
+
+span.header_text_color {
+    color: #fba319;
+    font-weight: 600;
+}
+.header_button .hire_me, .header_button .about_me{
+    border: none;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+.header_email .main_email {
+    margin-top: -20px;
+}
+.header_content{
+	margin-top:180px
+}
+.hire_me {
+    background: #fba319;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+.about_me {
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #fba319!important;
+    color: #fba319;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.hire_me:hover{
+	background: #fff;
+	border: 1px solid #fba319;
+	color: #fba319;
+}
+.about_me:hover{
+	background: #fba319;
+	color: #fff;
+}
+.header_email .email_title{
+    font-size: 20px;
+}
+
+.header_email .main_email {
+    font-size: 20px;
+}
+@media(max-width: 390px){
+	.header_button a {
+	    width: 135px!important;
+	}
+}
+@media(max-width: 1500px){
+    .header_content{
+    margin-top:115px
+}
+}
+.header_section {
+    margin-top: 50px;
+}
+/* header end */
+
+
+
+/* about start */
+.about_section{
+	padding-top: 50px;
+}
+p.about_text {
+    font-size: 20px;
+}
+.about_img{
+    width: 245px;
+}
+/* about end */
+
+
+/* expertice sec start */
+.expertice_section{
+	padding-top: 50px;
+}
+.progress {
+    height: 7px;
+    border-radius: 7px;
+}
+.progress_bars h3 {
+    font-size: 18px;
+    position: relative;
+}
+.progress_bars h3:after {
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+.bar_1:after {
+    content: '95%';
+}
+.bar_2:after {
+    content: '87%';
+}
+.bar_3:after {
+    content: '92%';
+}
+.bar_4:after {
+    content: '84%';
+}
+.bar_5:after {
+    content: '89%';
+}
+.bar_6:after {
+    content: '79%';
+}
+.bar_7:after {
+    content: '95%';
+}
+.main_progress_bar {
+    margin-bottom: 20px;
+}
+p.section_text {
+    font-size: 18px;
+}
+/* expertice sec end */
+
+
+/* service section start */
+.service_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+p.service_text {
+    font-size: 18px;
+}
+.service_list {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+ul.service_list li {
+    font-size: 19px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+p.service_num {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: 900;
+    color: #fba319;
+    border: 1px solid #fba319;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.main_service_box {
+    background: #ececec;
+    padding: 20px 25px 0px 25px;
+    box-shadow: 0px 0px 5px 0px #d6d1d1;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.main_service_box:hover{
+	background: transparent;
+	box-shadow: 0px 0px 10px 5px #e6e6e6;
+}
+.main_service_box:hover .service_num{
+	background: #fba3192e;
+	border: 1px solid #fba3192e;
+}
+.main_service_box:hover .heart_icon{
+	color: #fba3192e;
+}
+ .main_service_box:hover .list_icons{
+ 	color: #fba319;
+ }
+.service_box.text-center {
+    padding: 8px;
+}
+.list_icons{
+	transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.heart_icon {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    color: #f3f3f3;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+/* service section end */
+
+
+/* hire me section */
+.hireme_section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('../images/hire_me.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.hireme_section button {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 22px;
+}
+.hireme_section button:hover {
+    background: #fff;
+    border: #fff;
+}
+h1.hire_me_header {
+	font-size: 32px;
+	color: #fba319;
+}
+p.hire_me_text {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.hire_me_content h3 {
+    color: #fff;
+    font-size: 18px;
+    background: #2878f0;
+    display: inline;
+}
+/* hire me section */
+
+section.gellary_section.py-5 {
+    background: #f8f9fa;
+}
+
+/* contact section start */
+.contact_section{
+	padding-top: 50px;
+}
+.contact_text{
+	font-size: 18px;
+}
+.user_name, .user_phone, .user_email, .user_massage,.user_subject {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 9px 0px;
+    outline: none;
+}
+.send_massage{
+	border: none;
+    outline: none!important;
+    font-weight: 500;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    background: #fba319;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.send_massage:hover{
+    border: 1px solid #fba319;
+    background: #fff;
+    color: #fba319;
+}
+@media(max-width: 767px){
+	.send_massage{
+		width: 100%;
+    }
+    .template_img {
+        margin-top: 30px;
+    }
+    .main_contact_box {
+	    margin-top: 30px;
+	}
+}
+/* contact section end */
+
+
+/* contact icon box */
+.main_contact_box {
+    background: #ececec;
+    border-radius: 10px;
+    padding: 15px 0px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.social_icon{
+	transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+.main_contact_box:hover{
+	background: transparent;
+	box-shadow: 0px 0px 10px 5px #e6e6e6;
+}
+.main_contact_box:hover .social_icon{
+	color: #fba319;
+}
+/* contact icon box */
+
+
+
+/* footer section */
+.main_footer {
+    background: #fba319;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 16px;
+    margin-top: 40px;
+}
+/* footer section */
+
+
+/* award section start */
+.award_section{
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(../images/client_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin: 75px 0px; 
+}
+h1.count_data {
+    color: #fff;
+    font-size: 35px;
+}
+.counter_sub {
+    color: #fff;
+    margin-top: -7px;
+}
+.counter .fas {
+    color: #fba319;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+/* award section end */
+
+
+
+/* contact section page */
+
+.footer_icons{
+    padding: 0px 10px;
+}
+.all_icons .footer_icons {
+    font-size: 50px;
+    color: #fba319;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+.all_icons .footer_icons:hover {
+    color: #ceae7d;
+}
+.all_icons a:hover{
+    text-decoration: none!important;
+}
+
+
+/* template details */
+section.template-details.spad {
+    margin-top: 90px;
+}
+
+
+/* responsive code start */
+@media(max-width: 767px){
+    .template__details__text {
+        margin-top: 25px;
+    }
+	p.main_email {
+    font-size: 17px!important;
+	}
+
+	p.email_title {
+	    font-size: 17px!important;
+	}
+	.main_title {
+    font-size: 30px;
+	}	
+	p.about_text {
+    font-size: 17px;
+}
+p.section_text {
+    font-size: 17px;
+}
+.progress_bars h3 {
+    font-size: 17px;
+}
+p.service_text {
+    font-size: 17px;
+}
+ul.service_list li {
+    font-size: 17px;
+}
+h1.hire_me_header {
+    font-size: 22px;
+}
+p.hire_me_text {
+    font-size: 17px;
+}
+.hire_me_content h3 {
+    font-size: 17px;
+}
+.contact_text {
+    font-size: 17px;
+}
+.hireme_section button {
+    width: 135px;
+}
+i.fas.fa-comments.fa-2x.massage_icon {
+    padding: 10px;
+}
+.header_content {
+    margin-top: 0px;
+}
+.contact_img{
+	display: none;
+}
+.about_img {
+    width: 199px;
+    margin-top: 22px;
+}
+h1.about_text_title {
+    font-size: 22px;
+}
+.active:after, .navbar_items li a:hover:after{
+    width: 0%!important;
+}
+.mobile_var{
+    margin-top: 40px;
+}
+.counter {
+    margin: 20px 0px;
+}
+
+.all_icons .footer_icons {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.main_comment_box {
+    bottom: 12%;
+}
+.contact_sm_text {
+    font-size: 21px;
+}
+.social_link_area {
+    width: 100%;
+}
+.service_box {
+    margin-bottom: 30px;
+}
+
+}
+
+@media(max-width:991px){
+    .templates__item {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* animation*/
